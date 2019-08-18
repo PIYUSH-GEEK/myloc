@@ -10,7 +10,7 @@ setuptools.setup(
     author_email="pk33463@gmail.com",
     description="A python package to get the location.",
     long_description= long_description,long_description_content_type="text/markdown",
-    url="https://github.com/PIYUSH-GEEK/my_loc",
+    url="https://github.com/PIYUSH-GEEK/my-loc",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
