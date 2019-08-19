@@ -5,12 +5,12 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="myloc",
-    version="1.0.0",
+    version="1.0.1",
     author="Piyush Kumar",
     author_email="pk33463@gmail.com",
     description="A python package to get the location.",
     long_description= long_description,long_description_content_type="text/markdown",
-    url="https://github.com/PIYUSH-GEEK/my-loc",
+    url="https://github.com/PIYUSH-GEEK/myloc",
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
