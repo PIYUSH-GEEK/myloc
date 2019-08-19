@@ -1,1 +1,10 @@
-
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+my_loc/__init__.py
+myloc.egg-info/PKG-INFO
+myloc.egg-info/SOURCES.txt
+myloc.egg-info/dependency_links.txt
+myloc.egg-info/requires.txt
+myloc.egg-info/top_level.txt

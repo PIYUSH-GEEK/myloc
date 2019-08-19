@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: myloc
+Version: 1.0.0
+Summary: A python package to get the location.
+Home-page: https://github.com/PIYUSH-GEEK/my-loc
+Author: Piyush Kumar
+Author-email: pk33463@gmail.com
+License: UNKNOWN
+Description: # my-location
+        A python package that will show the location of the user.
+        This package contains pre-defined functions that will show the location of the user.
+        It will show the IP Address, latitude, longitude, etc.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
