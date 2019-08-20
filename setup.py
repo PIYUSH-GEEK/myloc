@@ -19,6 +19,6 @@ setuptools.setup(
     ],
     packages = ["my_loc"],
     include_package_data = True,
-    install_requires = ["requests"],
+    install_requires = ["requests", "bs4"],
 
 )
