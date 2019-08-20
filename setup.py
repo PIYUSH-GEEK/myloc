@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="myloc",
-    version="1.0.1",
+    version="1.1.1",
     author="Piyush Kumar",
     author_email="pk33463@gmail.com",
     description="A python package to get the location.",
