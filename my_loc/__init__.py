@@ -28,50 +28,64 @@ def lat(input):
 	
 	if input == 'Gomia' or input == 'gomia':
 		return 'Try \'gumia\' or \'Gumia\''
-		
-	page_get = requests.get('https://www.latlong.net/search.php?keyword=%s'%input)
 	
-	page_content = BeautifulSoup(page_get.content, 'html.parser')
+	try:  	
+		page_get = requests.get('https://www.latlong.net/search.php?keyword=%s'%input)
 		
-	tr1 = page_content.find_all('tr')[1]
-	
-	td1 = tr1 .find_all('td')[0].text
-	td2 = tr1 .find_all('td')[1].text
+		page_content = BeautifulSoup(page_get.content, 'html.parser')
+			
+		tr1 = page_content.find_all('tr')[1]
 		
-	print('Place: ',td1)
-	return td2
+		td1 = tr1 .find_all('td')[0].text
+		td2 = tr1 .find_all('td')[1].text
+			
+		print('Place: ',td1)
+		return td2
+		
+	except IndexError as Error:
+		return 'Search for some other place.'
 	
 def lng(input):
 	
 	if input == 'Gomia' or input == 'gomia':
 		return 'Try \'gumia\' or \'Gumia\''
+	
+	try:
+			
+		page_get = requests.get('https://www.latlong.net/search.php?keyword=%s'%input)
 		
-	page_get = requests.get('https://www.latlong.net/search.php?keyword=%s'%input)
-	
-	page_content = BeautifulSoup(page_get.content, 'html.parser')
-	
-	tr1 = page_content.find_all('tr')[1]
-	
-	td1 = tr1 .find_all('td')[0].text
-	td3 = tr1 .find_all('td')[2].text
+		page_content = BeautifulSoup(page_get.content, 'html.parser')
 		
-	print('Place: ',td1)
-	return td3
+		tr1 = page_content.find_all('tr')[1]
+		
+		td1 = tr1 .find_all('td')[0].text
+		td3 = tr1 .find_all('td')[2].text
+			
+		print('Place: ',td1)
+		return td3
+		
+	except IndexError as Error:
+		return 'Search for some other place.'
 
 def ltlng(input):
 	
 	if input == 'Gomia' or input == 'gomia':
 		return 'Try \'gumia\' or \'Gumia\''
+	
+	try:
+			
+		page_get = requests.get('https://www.latlong.net/search.php?keyword=%s'%input)
 		
-	page_get = requests.get('https://www.latlong.net/search.php?keyword=%s'%input)
-	
-	page_content = BeautifulSoup(page_get.content, 'html.parser')
-	
-	tr1 = page_content.find_all('tr')[1]
-	
-	td1 = tr1 .find_all('td')[0].text
-	td2 = tr1 .find_all('td')[1].text
-	td3 = tr1 .find_all('td')[2].text
+		page_content = BeautifulSoup(page_get.content, 'html.parser')
 		
-	print('Place: ',td1)
-	return td2, td3
+		tr1 = page_content.find_all('tr')[1]
+		
+		td1 = tr1 .find_all('td')[0].text
+		td2 = tr1 .find_all('td')[1].text
+		td3 = tr1 .find_all('td')[2].text
+			
+		print('Place: ',td1)
+		return td2, td3
+		
+	except IndexError as Error:
+		return 'Search for some other place.'
